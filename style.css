@@ -1,0 +1,40 @@
+/* .container {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+} */
+
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  background-color: rgb(28, 125, 54);
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+a {
+  color: white;
+  text-decoration: burlywood wavy underline;
+}
+
+a:hover {
+  color: rgb(200, 255, 21);
+  text-decoration: underline;
+  text-decoration: rgb(255, 0, 187) wavy underline;
+}
+
+.listing {
+  text-align: justify;
+  background-color: rgb(255, 0, 0);
+  font-weight: bolder;
+}
+
+ul {
+  background-color: blue;
+  font-size: small;
+}
