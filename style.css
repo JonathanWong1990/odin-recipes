@@ -1,11 +1,57 @@
-/* .container {
-  max-width: 500px;
-  text-align: center;
-  margin: 0 auto;
-} */
+*,
+*::before,
+*::after {
+  background-color: #c1d0ea;
+  box-sizing: border-box;
+}
+
+/* New styles for the image stacking */
+.image-container {
+  position: relative;
+  max-width: 400px; /* Adjust as needed */
+  margin: 20px auto;
+}
+
+#background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  z-index: 1; /* Background image */
+  opacity: 0.5;
+}
+
+#ramen-img {
+  position: relative;
+  width: 40%;
+  padding: 0px;
+  z-index: 2; /* Foreground image */
+  background-color: transparent;
+
+}
+
+.recipe-body,
+.recipe-body * {
+  margin: 0px auto;
+  max-width: 800px;
+  background-color: #f1f3f8;
+}
+
+.paper {
+  margin: 30px auto;
+  height: 700px;  
+}
+
+.giphy {
+  margin: 0px auto;
+  max-width: 350px;
+  display: block;
+}
 
 body {
-  font-family: monospace, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   background-color: rgb(28, 125, 54);
   color: white;
   margin: 0;
@@ -13,19 +59,22 @@ body {
 }
 
 h1 {
-  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: rgb(42, 41, 41);
+  padding: 20px 0px 0px 0px;
   font-weight: 900;
-}
-
-a {
-  color: white;
-  text-decoration: burlywood wavy underline;
+  margin: 0px auto;
 }
 
 a:hover {
-  color: rgb(200, 255, 21);
-  text-decoration: underline;
+  color: rgb(204, 20, 186);
   text-decoration: rgb(255, 0, 187) wavy underline;
+}
+
+a {
+  color: #42a5f5; /* Change to desired color */
+  text-decoration: none; /* Remove underline */
 }
 
 .listing {
@@ -34,7 +83,27 @@ a:hover {
   font-weight: bolder;
 }
 
-ul {
-  background-color: blue;
-  font-size: small;
+ul{
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  color: rgb(42, 41, 41);
+  padding: 15px;
+}
+
+.signature {
+  color: grey;
+  font-size: 10px;
+  margin 0 auto;
+  text-align: center;
+}
+
+p {
+  color: rgb(75, 71, 71);
+  font-size: 15px;
+  padding: 20px 80px;
+  text-align: left;
+  margin: 0 auto;
 }
